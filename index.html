@@ -3,167 +3,159 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EngThai Hub - เรียนภาษาอังกฤษแบบสนุก</title>
+  <title>EngThai Hub | English for Thai Students</title>
   <style>
-    :root { --primary: #667eea; --secondary: #764ba2; }
+    :root { --primary: #2563eb; --accent: #10b981; }
     body { 
-      font-family: Arial, sans-serif; 
+      font-family: 'Segoe UI', Arial, sans-serif; 
       margin:0; padding:0; 
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
-      color:#333; line-height:1.6; 
+      background: linear-gradient(135deg, #2563eb 0%, #1e3a8a 100%); 
+      color:#333; line-height:1.7; 
     }
     header, footer { 
-      background: rgba(0,0,0,0.85); 
-      color:white; 
-      text-align:center; 
-      padding:2rem 1rem; 
+      background: rgba(0,0,0,0.9); color:white; text-align:center; padding:2.5rem 1rem; 
     }
     nav { 
-      background:white; 
-      padding:1rem; 
-      position:sticky; 
-      top:0; 
-      z-index:100; 
-      box-shadow:0 4px 12px rgba(0,0,0,0.15); 
-      text-align:center; 
+      background:white; padding:1.2rem; position:sticky; top:0; z-index:100; 
+      box-shadow:0 4px 15px rgba(0,0,0,0.1); text-align:center; 
     }
-    nav a { 
-      margin:0 18px; 
-      text-decoration:none; 
-      color:var(--primary); 
-      font-weight:bold; 
-    }
-    section { padding:60px 20px; max-width:1200px; margin:0 auto; }
-    .lesson-grid { 
-      display:grid; 
-      grid-template-columns:repeat(auto-fit, minmax(340px,1fr)); 
-      gap:25px; 
-    }
+    nav a { margin:0 18px; text-decoration:none; color:var(--primary); font-weight:600; }
+    section { padding:70px 20px; max-width:1200px; margin:0 auto; }
+    .lesson-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(360px,1fr)); gap:30px; }
     .card { 
-      background:white; 
-      border-radius:20px; 
-      padding:25px; 
-      box-shadow:0 10px 25px rgba(0,0,0,0.1); 
-      transition:0.3s; 
+      background:white; border-radius:20px; padding:28px; 
+      box-shadow:0 10px 30px rgba(0,0,0,0.15); transition:0.3s; 
     }
     .card:hover { transform:translateY(-10px); }
-    img, iframe { 
-      width:100%; 
-      border-radius:12px; 
-      margin:10px 0; 
-    }
-    button { 
-      background:var(--primary); 
-      color:white; 
-      border:none; 
-      padding:12px 25px; 
-      border-radius:10px; 
-      cursor:pointer; 
-      margin:5px; 
-    }
+    img, iframe { width:100%; border-radius:16px; margin:15px 0; }
+    button { background:var(--primary); color:white; border:none; padding:14px 28px; border-radius:10px; cursor:pointer; font-size:1.05rem; }
+    .game-btn { background:var(--accent); }
+    h2 { color:white; text-align:center; margin-bottom:40px; }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>🇹🇭 EngThai Hub 🇬🇧</h1>
-    <p>Interactive English Learning with Thai Culture</p>
+    <h1>EngThai Hub</h1>
+    <p>English Learning Platform for Thai Students</p>
   </header>
 
   <nav>
     <a href="#home">Home</a>
     <a href="#lessons">Lessons</a>
+    <a href="#reading">Reading</a>
     <a href="#activities">Activities</a>
+    <a href="#games">Games</a>
     <a href="#quiz">Quiz</a>
     <a href="#resources">Resources</a>
   </nav>
 
   <section id="home" style="color:white; text-align:center;">
     <h2>Welcome to EngThai Hub!</h2>
-    <p style="font-size:1.3rem;">เรียนภาษาอังกฤษ + วัฒนธรรมไทย</p>
+    <p style="font-size:1.4rem;">A beautiful, fun, and effective way to learn English — designed for Thai students.</p>
   </section>
 
-  <!-- Lessons with Real Thai Images -->
+  <!-- Lessons -->
   <section id="lessons">
-    <h2 style="text-align:center; color:white;">📚 Lessons with Thai Culture</h2>
+    <h2>📚 English Lessons</h2>
     <div class="lesson-grid">
 
-      <!-- Lesson 1: Greetings -->
       <div class="card">
         <h3>1. Greetings & Introductions</h3>
-        <img src="https://source.unsplash.com/random/600x400/?thai-wai-greeting" alt="Thai Wai Greeting">
-        <iframe width="100%" height="200" src="https://www.youtube.com/embed/PlNePbMDrc8" frameborder="0" allowfullscreen></iframe>
-        <p><strong>Vocabulary:</strong> Hello, Sawasdee krub/ka, Wai (traditional Thai greeting)</p>
-        <p><strong>Activity:</strong> Practice the Wai gesture while saying hello.</p>
+        <img src="https://picsum.photos/id/1015/600/400" alt="Greetings">
+        <iframe width="100%" height="220" src="https://www.youtube.com/embed/fI8EsEXS59w" frameborder="0" allowfullscreen></iframe>
+        <p><strong>Vocabulary:</strong> Hello, Hi, Good morning, Nice to meet you</p>
+        <p><strong>Grammar:</strong> I am / You are</p>
+        <p><strong>Explanation:</strong> Learn how to start conversations naturally.</p>
       </div>
 
-      <!-- Lesson 2: Food -->
       <div class="card">
-        <h3>2. Food & Ordering</h3>
-        <img src="https://source.unsplash.com/random/600x400/?pad-thai" alt="Pad Thai Thai Food">
-        <iframe width="100%" height="200" src="https://www.youtube.com/embed/aHpCfFuEF1M" frameborder="0" allowfullscreen></iframe>
-        <p><strong>Key Sentences:</strong> I'd like Pad Thai, How much is this?, No spicy please!</p>
+        <h3>2. Food & Restaurant English</h3>
+        <img src="https://picsum.photos/id/292/600/400" alt="Restaurant">
+        <iframe width="100%" height="220" src="https://www.youtube.com/embed/txcyuBCSTq4" frameborder="0" allowfullscreen></iframe>
+        <p><strong>Key Sentences:</strong> I'd like..., How much is this?, Can I have the bill please?</p>
       </div>
 
-      <!-- Lesson 3: Travel -->
       <div class="card">
-        <h3>3. Travel in Thailand</h3>
-        <img src="https://source.unsplash.com/random/600x400/?phuket-beach" alt="Phuket Beach Thailand">
-        <iframe width="100%" height="200" src="https://www.youtube.com/embed/8v4aFzO8v4A" frameborder="0" allowfullscreen></iframe>
-        <p><strong>Useful Phrases:</strong> Where is the beach?, How do I get to...?</p>
+        <h3>3. Travel & Directions</h3>
+        <img src="https://picsum.photos/id/1016/600/400" alt="Travel">
+        <iframe width="100%" height="220" src="https://www.youtube.com/embed/Hikoq2cmQ-w" frameborder="0" allowfullscreen></iframe>
+        <p><strong>Useful Phrases:</strong> Excuse me, where is...?, Turn left, Turn right.</p>
       </div>
-
     </div>
   </section>
 
-  <!-- Activities, Quiz, Resources (same as before) -->
-  <section id="activities" style="background:#f8f9fa;">
-    <h2 style="text-align:center;">📖 Learning Activities</h2>
+  <!-- Reading Story -->
+  <section id="reading" style="background:#f8fafc;">
+    <h2 style="color:#1e2937;">📖 Reading Story: The Beauty of Thailand</h2>
+    <div class="card" style="max-width:900px; margin:0 auto;">
+      <h3>The Beauty of Thailand</h3>
+      <img src="https://picsum.photos/id/1018/800/400" alt="Thailand Beauty">
+      <p>Thailand is a wonderful country in Southeast Asia. It has beautiful beaches, green mountains, and friendly people. Every year, millions of tourists visit Thailand to see its amazing temples, eat delicious food, and enjoy its warm sunshine.</p>
+      <p>One of the most famous places is Phuket, with its white sand beaches and clear blue water. Bangkok, the capital city, is full of life, markets, and beautiful temples like Wat Arun.</p>
+      
+      <h4>Comprehension Questions:</h4>
+      <p>1. Where is Thailand located?<br>
+         2. Name two popular places in Thailand.<br>
+         3. What do tourists like to do in Thailand?</p>
+      <button onclick="alert('Well done! Write your answers in your notebook.')">Submit Answers (Practice)</button>
+    </div>
+  </section>
+
+  <!-- Activities & Games -->
+  <section id="games">
+    <h2>🎮 English Games & Activities</h2>
     <div class="lesson-grid">
       <div class="card">
-        <h3>Reading & Culture</h3>
-        <p>Learn English while discovering Thai traditions and culture.</p>
+        <h3>Listening Practice</h3>
+        <iframe width="100%" height="200" src="https://www.youtube.com/embed/PlNePbMDrc8" frameborder="0" allowfullscreen></iframe>
       </div>
       <div class="card">
-        <h3>Speaking & Listening</h3>
-        <p>Watch short videos and repeat the phrases.</p>
+        <h3>English Game: Vocabulary Match</h3>
+        <button class="game-btn" onclick="alert('Game: Match the words!\nHello = สวัสดี\nTry to make 10 sentences today!')">Play Matching Game</button>
+      </div>
+      <div class="card">
+        <h3>Speaking Challenge</h3>
+        <p>Record yourself introducing yourself in English (5-8 sentences).</p>
       </div>
     </div>
   </section>
 
+  <!-- Quiz -->
   <section id="quiz">
-    <h2 style="text-align:center; color:white;">🧠 Interactive Quiz</h2>
+    <h2>🧠 Interactive Quiz</h2>
     <div class="card" id="quizBox" style="max-width:800px; margin:20px auto;"></div>
   </section>
 
+  <!-- Resources -->
   <section id="resources">
-    <h2 style="text-align:center; color:white;">📥 Downloadable Worksheets</h2>
+    <h2>📥 Downloadable Materials</h2>
     <div class="lesson-grid">
       <div class="card">
         <h3>Worksheet 1: Greetings</h3>
         <a href="worksheet1.pdf" download>⬇️ Download PDF</a>
       </div>
       <div class="card">
-        <h3>Worksheet 2: Grammar</h3>
+        <h3>Worksheet 2: Food English</h3>
         <a href="worksheet2.pdf" download>⬇️ Download PDF</a>
       </div>
       <div class="card">
-        <h3>Worksheet 3: Reading & Writing</h3>
+        <h3>Worksheet 3: Travel English</h3>
         <a href="worksheet3.pdf" download>⬇️ Download PDF</a>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>Made with ❤️ by [Your Full Name] | English Assignment - 23 May 2026</p>
-    <p>References: British Council, YouTube, Unsplash</p>
+    <p>Made with ❤️ by LETICIA | English Assignment - 23 May 2026</p>
+    <p>References: British Council, Cambridge English, YouTube</p>
   </footer>
 
   <script>
+    // Quiz
     const questions = [
-      { q: "What does 'Sawasdee' mean?", options: ["Goodbye","Hello","Thank you"], answer: "Hello" },
-      { q: "How do you say 'I'd like some rice please'?", options: ["I want rice","I'd like some rice please"], answer: "I'd like some rice please" },
-      { q: "Correct sentence:", options: ["I go market yesterday","I went to the market yesterday"], answer: "I went to the market yesterday" }
+      { q: "What is a polite morning greeting?", options: ["Good night","Good morning","Goodbye"], answer: "Good morning" },
+      { q: "How do you politely order food?", options: ["Give me food","I'd like to order...","I want this"], answer: "I'd like to order..." }
     ];
 
     let current = 0, score = 0;
@@ -174,13 +166,14 @@
       box.innerHTML = `
         <h3>Question ${current+1}: ${q.q}</h3>
         <div id="options"></div>
-        <p id="feedback" style="margin:15px 0; font-weight:bold;"></p>
-        <button id="nextBtn" style="display:none;" onclick="nextQuestion()">Next Question</button>
+        <p id="feedback" style="margin:20px 0; font-weight:bold;"></p>
+        <button id="nextBtn" style="display:none;" onclick="nextQuestion()">Next</button>
       `;
       const optsDiv = document.getElementById('options');
       q.options.forEach(opt => {
         const btn = document.createElement('button');
         btn.textContent = opt;
+        btn.style.margin = "8px";
         btn.onclick = () => checkAnswer(opt, q.answer);
         optsDiv.appendChild(btn);
       });
@@ -192,7 +185,7 @@
         fb.style.color = "green"; fb.textContent = "✅ Correct!";
         score++;
       } else {
-        fb.style.color = "red"; fb.textContent = `❌ Wrong. Correct answer: ${correct}`;
+        fb.style.color = "red"; fb.textContent = `❌ Correct answer: ${correct}`;
       }
       document.getElementById('nextBtn').style.display = 'block';
     }
@@ -201,7 +194,7 @@
       current++;
       if (current < questions.length) loadQuiz();
       else {
-        document.getElementById('quizBox').innerHTML = `<h2>🎉 Quiz Completed!</h2><h3>Your Score: ${score}/${questions.length}</h3><button onclick="location.reload()">Restart Quiz</button>`;
+        document.getElementById('quizBox').innerHTML = `<h2>🎉 Well Done!</h2><h3>Score: ${score}/${questions.length}</h3><button onclick="location.reload()">Restart Quiz</button>`;
       }
     }
 
